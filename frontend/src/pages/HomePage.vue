@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import Button from 'primevue/button';
 import { useRouter } from 'vue-router';
- import navbar from '../components/NavBar.vue';
+import navbar from '../components/NavBar.vue';
 
 // Initialize the router
 const router = useRouter();
@@ -9,6 +9,9 @@ const router = useRouter();
 // Define the function that navigates to the next page
 function goToNextPage() {
   router.push('/requestforhelper.vue'); // Replace with the correct route
+}
+function goToCheckUpPage() {
+  router.push('/requestforcheckup.vue'); // Replace with the correct route
 }
 </script>
 
@@ -20,7 +23,7 @@ function goToNextPage() {
       <Button @click="goToNextPage()" label="Request for Helper" class="p-button-success custom-button"/>
       <Button label="Emergency Alert" class="p-button-success custom-button"/> <br>
       <Button label="Speak to Me" class="p-button-success custom-button"/> 
-      <Button label="Request for Check-Up" class="p-button-success custom-button"/>
+      <Button @click="goToCheckUpPage()" label="Request for Check-Up" class="p-button-success custom-button"/>
     </div>
   </div>
 </template>

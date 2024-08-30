@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import homepage from '../pages/HomePage.vue'
 import requestforhelper from '../pages/requestforhelper.vue'
+import requestforcheckup from '../pages/requestforcheckup.vue' // Adjust the path if necessary
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -15,7 +16,10 @@ const router = createRouter({
       name: 'request',
       component: requestforhelper
     },
-    
+    { path: '/requestforcheckup.vue',
+      name: 'requestforcheckup', 
+      component: requestforcheckup
+    }
   ]
 })
 
