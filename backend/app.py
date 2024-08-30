@@ -77,7 +77,7 @@ def match_nearest_caregiver():
         address = elderly['Address']
         address_list.append(address)
     for address in address_list:
-
+        pass
 if __name__ == '__main__':
     app.run(port=5000, debug=True)
 
