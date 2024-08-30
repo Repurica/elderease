@@ -7,4 +7,5 @@ import dialog from 'primevue/dialog'
   <RouterView />
 </template>
 
-<style scoped></style>
+<style scoped>
+</style>
