@@ -13,6 +13,9 @@ function goToNextPage() {
 function goToCheckUpPage() {
   router.push('/requestforcheckup.vue'); // Replace with the correct route
 }
+function goToEmergencyPage() {
+  router.push('/Emergency.vue'); // Replace with the correct route
+}
 </script>
 
 <template>
@@ -21,7 +24,7 @@ function goToCheckUpPage() {
     <h1 class="page-title">ElderEase</h1>
     <div class="button-container">
       <Button @click="goToNextPage()" label="Request for Helper" class="p-button-success custom-button"/>
-      <Button label="Emergency Alert" class="p-button-success custom-button"/> <br>
+      <Button @click="goToEmergencyPage()" label="Emergency Alert" class="p-button-success custom-button"/> <br>
       <Button label="Speak to Me" class="p-button-success custom-button"/> 
       <Button @click="goToCheckUpPage()" label="Request for Check-Up" class="p-button-success custom-button"/>
     </div>
