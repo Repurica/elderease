@@ -1,21 +1,21 @@
 <script setup></script>
 
 <template>
-  <header>
+  <footer>
     <nav>
       <ul>
         <li>
           <router-link to="/">Home</router-link>
         </li>
+        <!-- <li>
+          <router-link to="/about"></router-link>
+        </li> -->
         <li>
-          <router-link to="/about">About</router-link>
-        </li>
-        <li>
-          <router-link to="/contact">Contact</router-link>
+          <router-link to="/contact">Profile</router-link>
         </li>
       </ul>
     </nav>
-  </header>
+  </footer>
 </template>
 
 <style scoped>
