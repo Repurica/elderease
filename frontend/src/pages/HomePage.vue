@@ -9,7 +9,7 @@ import Card from 'primevue/card'
     <template #header>
       <img alt="user header" src="https://primefaces.org/cdn/primevue/images/usercard.png" />
     </template>
-    <template #title>Advanced Card</template>
+    <template #title>123</template>
     <template #subtitle>Card subtitle</template>
     <template #content>
       <p class="m-0">
