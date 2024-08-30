@@ -1,28 +1,55 @@
 <script setup lang="ts">
-// import navbar from '../components/NavBar.vue'
-import Card from 'primevue/card'
+import Button from 'primevue/button';
+import { useRouter } from 'vue-router';
+
+// Initialize the router
+const router = useRouter();
+
+// Define the function that navigates to the next page
+function goToNextPage() {
+  router.push('requestforhelp.vue'); // Replace with the correct route
+}
 </script>
 
 <template>
-  <!-- <navbar></navbar> -->
-  <Card style="width: 25rem; overflow: hidden">
-    <template #header>
-      <img alt="user header" src="https://primefaces.org/cdn/primevue/images/usercard.png" />
-    </template>
-    <template #title>Advanced Card</template>
-    <template #subtitle>Card subtitle</template>
-    <template #content>
-      <p class="m-0">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error
-        repudiandae numquam deserunt quisquam repellat libero asperiores earum nam nobis, culpa
-        ratione quam perferendis esse, cupiditate neque quas!
-      </p>
-    </template>
-    <template #footer>
-      <div class="flex gap-4 mt-1">
-        <Button label="Cancel" severity="secondary" outlined class="w-full" />
-        <Button label="Save" class="w-full" />
-      </div>
-    </template>
-  </Card>
+  <div class="page-container">
+    <h1 class="page-title">ElderEase</h1>
+    <div class="button-container">
+      <Button @click="goToNextPage()" label="Request for Helper" class="p-button-success custom-button"/>
+      <Button label="Emergency Alert" class="p-button-success custom-button"/> <br>
+      <Button label="Speak to Me" class="p-button-success custom-button"/> 
+      <Button label="Request for Check-Up" class="p-button-success custom-button"/>
+    </div>
+  </div>
 </template>
+
+
+<style scoped>
+
+/* Custom styles for the page */
+
+.page-container {
+  padding: 20px;
+  text-align: center;
+  background-color: beige;
+  height: 1000px;
+}
+
+.page-title {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.custom-button{
+  background-color: 	#5C4033;
+  color: white;
+  border-color: 	#5C4033;
+}
+</style>
+
