@@ -7,7 +7,7 @@ const router = useRouter();
 
 // Define the function that navigates to the next page
 function goToNextPage() {
-  router.push('requestforhelp.vue'); // Replace with the correct route
+  router.push('/requestforhelper.vue'); // Replace with the correct route
 }
 </script>
 

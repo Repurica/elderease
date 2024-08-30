@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import homepage from '../pages/HomePage.vue'
+import requestforhelper from '../pages/requestforhelper.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -8,6 +9,11 @@ const router = createRouter({
       path: '/',
       name: 'home',
       component: homepage
+    },
+    {
+      path: '/requestforhelper.vue',
+      name: 'home',
+      component: requestforhelper
     },
     
   ]
