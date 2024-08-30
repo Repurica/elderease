@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import Button from 'primevue/button';
 import { useRouter } from 'vue-router';
+ import navbar from '../components/NavBar.vue';
 
 // Initialize the router
 const router = useRouter();
