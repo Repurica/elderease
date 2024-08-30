@@ -12,6 +12,7 @@ function goToNextPage() {
 </script>
 
 <template>
+
   <div class="page-container">
     <h1 class="page-title">ElderEase</h1>
     <div class="button-container">
