@@ -1,12 +1,10 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
-import HomePage from './pages/HomePage.vue'
-import dialog from "primevue/dialog";
-
+import dialog from 'primevue/dialog'
 </script>
 
 <template>
-  <HomePage></HomePage>
+  <RouterView />
 </template>
 
 <style scoped></style>

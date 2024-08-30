@@ -12,7 +12,7 @@ const router = createRouter({
     },
     {
       path: '/requestforhelper.vue',
-      name: 'home',
+      name: 'request',
       component: requestforhelper
     },
     
