@@ -1,10 +1,10 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHistory } from 'vue-router';
 import homepage from '../pages/HomePage.vue';
 import requestforhelper from '../pages/requestforhelper.vue';
-import requestforcheckup from '../pages/requestforcheckup.vue';// Adjust the path if necessary
-import Emergency from '../pages/emergency.vue'; 
-import profile from "../pages/profile.vue";
-// import speaktome from "../pages/speaktome.vue";
+import requestforcheckup from '../pages/requestforcheckup.vue';
+import Emergency from '../pages/emergency.vue';
+import profile from '../pages/profile.vue';
+import speak from '../pages/SpeaktoMe.vue';
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -15,32 +15,31 @@ const router = createRouter({
       component: homepage
     },
     {
-      path: '/requestforhelper.vue',
-      name: 'request',
+      path: '/requestforhelper',
+      name: 'requestforhelper',
       component: requestforhelper
     },
-
-    { path: '/requestforcheckup.vue',
-      name: 'requestforcheckup', 
+    {
+      path: '/requestforcheckup',
+      name: 'requestforcheckup',
       component: requestforcheckup
     },
-
     {
-      path: '/emergency.vue',
-      name: 'EmergencyAlert',
+      path: '/emergency',
+      name: 'emergencyalert',
       component: Emergency
     },
-
     {
-      path: '/profile.vue',
+      path: '/profile',
       name: 'profile',
       component: profile
     },
-    
-  
-
-
+    {
+      path: '/SpeaktoMe',
+      name: 'speaktome',
+      component: speak
+    }
   ]
-})
+});
 
-export default router
+export default router;

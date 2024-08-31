@@ -17,7 +17,7 @@ function goToEmergencyPage() {
   router.push('/emergency.vue'); // Replace with the correct route
 }
 function goToSpeaktoMePage() {
-  router.push('/speaktome.vue'); // Replace with the correct route
+  router.push('/SpeaktoMe.vue'); // Replace with the correct route
 }
 </script>
 
