@@ -1,9 +1,10 @@
-import { createRouter, createWebHistory } from 'vue-router';
+import { createRouter, createWebHistory } from 'vue-router'
 import homepage from '../pages/HomePage.vue';
 import requestforhelper from '../pages/requestforhelper.vue';
-import requestforcheckup from '../pages/requestforcheckup.vue';
-import Emergency from '../pages/emergency.vue';
-import profile from '../pages/profile.vue';
+import requestforcheckup from '../pages/requestforcheckup.vue';// Adjust the path if necessary
+import Emergency from '../pages/emergency.vue'; 
+import profile from "../pages/profile.vue";
+
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -14,26 +15,29 @@ const router = createRouter({
       component: homepage
     },
     {
-      path: '/requestforhelper',
-      name: 'requestforhelper',
+      path: '/requestforhelper.vue',
+      name: 'request',
       component: requestforhelper
     },
-    {
-      path: '/requestforcheckup',
-      name: 'requestforcheckup',
+
+    { path: '/requestforcheckup.vue',
+      name: 'requestforcheckup', 
       component: requestforcheckup
     },
+
     {
-      path: '/emergency',
-      name: 'emergencyalert',
+      path: '/emergency.vue',
+      name: 'EmergencyAlert',
       component: Emergency
     },
+
     {
       path: '/profile',
       name: 'profile',
       component: profile
-    }
-  ]
-});
+    },
 
-export default router;
+  ]
+})
+
+export default router
