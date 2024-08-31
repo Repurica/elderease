@@ -4,7 +4,7 @@ import requestforhelper from '../pages/requestforhelper.vue';
 import requestforcheckup from '../pages/requestforcheckup.vue';
 import Emergency from '../pages/emergency.vue';
 import profile from '../pages/profile.vue';
-import speak from '../pages/SpeaktoMe.vue';
+// import speak from '../pages/HomePage.vue';
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -34,11 +34,11 @@ const router = createRouter({
       name: 'profile',
       component: profile
     },
-    {
-      path: '/SpeaktoMe',
-      name: 'speaktome',
-      component: speak
-    }
+    // {
+    //   path: '/SpeaktoMe',
+    //   name: 'speaktome',
+    //   component: speak
+    // }
   ]
 });
 
