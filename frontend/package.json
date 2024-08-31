@@ -17,6 +17,7 @@
     "@primevue/themes": "^4.0.5",
     "primeicons": "^7.0.0",
     "primevue": "^4.0.5",
+    "recorder-js": "^1.0.7",
     "vue": "^3.4.29",
     "vue-router": "^4.4.3"
   },

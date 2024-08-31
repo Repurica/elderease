@@ -14,7 +14,10 @@ function goToCheckUpPage() {
   router.push('/requestforcheckup.vue'); // Replace with the correct route
 }
 function goToEmergencyPage() {
-  router.push('/Emergency.vue'); // Replace with the correct route
+  router.push('/emergency.vue'); // Replace with the correct route
+}
+function goToSpeaktoMePage() {
+  router.push('/speaktome.vue'); // Replace with the correct route
 }
 </script>
 
@@ -25,7 +28,7 @@ function goToEmergencyPage() {
     <div class="button-container">
       <Button @click="goToNextPage()" label="Request for Helper" class="p-button-success custom-button"/>
       <Button @click="goToEmergencyPage()" label="Emergency Alert" class="p-button-success custom-button"/> <br>
-      <Button label="Speak to Me" class="p-button-success custom-button"/> 
+      <Button @click="goToSpeaktoMePage()" label="Speak to Me" class="p-button-success custom-button"/> 
       <Button @click="goToCheckUpPage()" label="Request for Check-Up" class="p-button-success custom-button"/>
     </div>
   </div>
@@ -55,9 +58,9 @@ function goToEmergencyPage() {
 }
 
 .custom-button{
-  background-color: 	#5C4033;
+  background-color:   #5C4033;
   color: white;
-  border-color: 	#5C4033;
+  border-color:   #5C4033;
 }
 </style>
 

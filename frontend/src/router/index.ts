@@ -1,9 +1,10 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import homepage from '../pages/HomePage.vue'
-import requestforhelper from '../pages/requestforhelper.vue'
-import requestforcheckup from '../pages/requestforcheckup.vue' // Adjust the path if necessary
+import homepage from '../pages/HomePage.vue';
+import requestforhelper from '../pages/requestforhelper.vue';
+import requestforcheckup from '../pages/requestforcheckup.vue';// Adjust the path if necessary
 import Emergency from '../pages/emergency.vue'; 
-import profile from '../pages/profile.vue'; 
+import profile from "../pages/profile.vue";
+// import speaktome from "../pages/speaktome.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -34,7 +35,9 @@ const router = createRouter({
       path: '/profile.vue',
       name: 'profile',
       component: profile
-    }
+    },
+    
+  
 
 
   ]
