@@ -16,9 +16,7 @@ function goToCheckUpPage() {
 function goToEmergencyPage() {
   router.push('/emergency.vue'); // Replace with the correct route
 }
-function goToSpeaktoMePage() {
-  router.push('/SpeaktoMe.vue'); // Replace with the correct route
-}
+
 </script>
 
 <template>
@@ -28,7 +26,7 @@ function goToSpeaktoMePage() {
     <div class="button-container">
       <Button @click="goToNextPage()" label="Request for Helper" class="p-button-success custom-button"/>
       <Button @click="goToEmergencyPage()" label="Emergency Alert" class="p-button-success custom-button"/> <br>
-      <Button @click="goToSpeaktoMePage()" label="Speak to Me" class="p-button-success custom-button"/> 
+      <Button label="Speak to Me" class="p-button-success custom-button"/> 
       <Button @click="goToCheckUpPage()" label="Request for Check-Up" class="p-button-success custom-button"/>
     </div>
   </div>
