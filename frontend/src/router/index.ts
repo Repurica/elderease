@@ -3,6 +3,7 @@ import homepage from '../pages/HomePage.vue'
 import requestforhelper from '../pages/requestforhelper.vue'
 import requestforcheckup from '../pages/requestforcheckup.vue' // Adjust the path if necessary
 import Emergency from '../pages/emergency.vue'; 
+import profile from '../pages/profile.vue'; 
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -27,6 +28,12 @@ const router = createRouter({
       path: '/emergency.vue',
       name: 'EmergencyAlert',
       component: Emergency
+    },
+
+    {
+      path: '/profile.vue',
+      name: 'profile',
+      component: profile
     }
 
 
