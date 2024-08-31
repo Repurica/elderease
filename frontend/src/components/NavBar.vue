@@ -13,7 +13,7 @@
           <router-link to="/about"></router-link>
         </li> -->
         <li>
-          <router-link to="/contact">Profile</router-link>
+          <router-link to="/profile">Profile</router-link>
         </li>
       </ul>
     </nav>
