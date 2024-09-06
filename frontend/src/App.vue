@@ -5,6 +5,7 @@ import dialog from 'primevue/dialog'
 </script>
 
 <template>
+  qwef
   <RouterView />
 </template>
 
